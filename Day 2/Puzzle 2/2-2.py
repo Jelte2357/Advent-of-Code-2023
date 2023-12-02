@@ -1,7 +1,7 @@
 s = 0
 
 with open("input.txt", "r") as f:
-    for enum, line in enumerate(f.readlines()):
+    for line in f.readlines():
         
         line = line.split(": ")[1][:-1] # take the info after game x: ; [:-1] removes the \n
         line = line.replace(";", ",") # replace ; with , to make it easier to split
